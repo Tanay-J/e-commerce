@@ -1,5 +1,13 @@
+ul{
+    margin: 0;
+}
 .nav-header{
     border-radius: 0;
+}
+
+.brand-logo{
+    width: 7rem;
+    border: none;
 }
 
 .nav-links{
@@ -18,4 +26,24 @@
 
 .input{
     width: 20rem;
+}
+
+.topbar-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.main-img{
+    width: 100%;
+    max-height: 400px;
+}
+
+.main-img-text{
+    position: absolute;
+    color: var(--text-white);
+    top: 20%;
+    left: 5%;
+    color: var(--primary-dark);
 }
