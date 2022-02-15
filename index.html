@@ -8,14 +8,15 @@
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
-    <title>Turning Pages</title>
+    <title>Home | Turning Pages</title>
 </head>
 <body>
+    <!-- Main Navigation Bar -->
     <header class="nav-header nav-bg-transparent px-xl py-xs">
-      <img class="brand-logo" src="/assets/Turning Pages-1.png">
-      <input class="input p-xs br-s my-l" placeholder="Search">                     
-      <nav class="my-l">             
-          <ul class="nav-links">
+        <img class="brand-logo" src="/assets/Turning Pages-1.png">
+        <input class="input p-xs br-s my-l mx-auto" placeholder="Search">                     
+        <nav class="nav-links my-l">             
+            <ul class="nav-links">
                 <li class="h6 px-s"><a href="/pages/login.html"><button class="btn btn-outline outline-primary">Login</button></a></li>
                 <li class="h6 px-s">
                     <a href="/pages/signup.html">
@@ -28,35 +29,38 @@
                     <a class="" href="/pages/wishlist.html">
                         <div class="badge-container"> 
                             <div class="badge">
-                              <i class="fas fa-shopping-cart nav-icons text-s"></i>
-                              <span class="badge-icon">0</span>    
-                          </div>
-                      </div>
+                            <i class="fas fa-shopping-cart nav-icons text-s"></i>
+                            <span class="badge-icon">0</span>    
+                        </div>
+                    </div>
                     </a>
                 </li>
                 <li class="h6 px-s">
                     <a href="/pages/cart.html">
                         <div class="badge-container"> 
                             <div class="badge">
-                                  <i class="fas fa-envelope nav-icons text-s"></i>
+                                <i class="fas fa-heart nav-icons text-s"></i>
                                 <span class="badge-icon">0</span>    
                             </div>
                         </div>
                     </a>
                 </li>
             </ul>
-      </nav>
-  </header>
+        </nav>
+    </header>
 
-  <nav class="topbar-container">
-      <a class="active">Home</a>
-      <a class="link link-dark" href="/pages/allproducts.html">All Products</a>
-      <a class="link link-dark">Categories</a>
-      <a class="link link-dark">Track Order</a>
-  </nav>
+    <!--Second Navigation Bar -->
+    <nav class="topbar-container">
+        <a class="active">Home</a>
+        <a class="link link-dark" href="/pages/allproducts.html">All Products</a>
+        <a class="link link-dark">Categories</a>
+        <a class="link link-dark">Track Order</a>
+    </nav>
 
-  <main class="wrapper mx-auto my-m">
-        <div class="pos-rel">
+    <!-- Main Content -->
+    <main class="wrapper mx-auto my-m">
+        <!-- Main Image -->
+        <div class="main-img-container">
             <img class="main-img br-m" src="/assets/main-3.jpg">
             <div class="main-img-text">
                 <h2 class="h2">Turning Pages</h2>
@@ -64,42 +68,77 @@
                 <a class="link" href="/pages/allproducts.html">
                     <button class="btn btn-primary my-m">Browse</button>
                 </a>
-            </div>           
+            </div>
+            <p class="main-img-text-bottom text-xxs">Free Delivery Above Rs. 499 </p>           
         </div>
+            
+        <h6 class="h6 text-center my-m">Featured Categories</h6>
+        <!-- Featured Content -->
+        <section class="featured-wrapper">
+            <section class="featured-container grid p-l">
+                <img class="card-img-s grid-row-span-2" src="/assets/products/book1.webp">
+                <div class="px-m">
+                    <small class="bg-primary font-bold text-white px-s br-m">New Arrivals</small>
+                </div>
+                <div class="px-m">
+                    <p class="text-xs font-xbold">Billy Summers</p>
+                    <p>and other latest books by top authors</p>
+                    <button class="btn btn-outline my-s"><a class="link link-dark" href="">Browse</a></button>
+                </div>
+            </section>
 
-        <section class="categories my-m">
-            <div class="category-card flex-grow-1 br-m">
-                <a class="link font-bold" href="">Fiction</a>
-            </div>
-            <div class="category-card flex-grow-1 br-m">
-                <a class="link font-bold" href="">Non-Fiction</a>
-            </div>
-            <div class="category-card flex-grow-1 br-m">
-                <a class="link font-bold" href="">Crime/Mystery</a>
-            </div>
-            <div class="category-card flex-grow-1 br-m">
-                <a class="link font-bold" href="">Memoirs</a>
-            </div>
-            <div class="category-card flex-grow-1 br-m">
-                <a class="link font-bold" href="">Fantasy</a>
+            <section class="featured-container grid p-l">
+                <img class="card-img-s grid-row-span-2" src="/assets/products/book2.jpg">
+                <div class="px-m">
+                    <small class="bg-primary font-bold text-white px-s br-m">Best Sellers</small>
+                </div>
+                <div class="px-m">
+                    <p class="text-xs font-xbold">Psychology of Money</p>
+                    <p>and other top sellers</p>
+                    <button class="btn btn-outline my-s"><a class="link link-dark" href="">Browse</a></button>
+                </div>
+            </section>
+        </section>
+        <!-- Category Cards -->
+        <section class="my-l">
+            <h6 class="h6 text-center">Shop by Genres</h6>
+            
+            <div class="categories my-m">
+                <a class="category-card link font-bold flex-grow-1 br-m" href="">
+                    Fiction
+                </a>
+                <a class="category-card link font-bold flex-grow-1 br-m" href="">
+                    Non-Fiction
+                </a>
+                <a class="category-card link font-bold flex-grow-1 br-m" href="">
+                    Self-Help
+                </a>
+                <a class="category-card link font-bold flex-grow-1 br-m" href="">
+                    Crime/Mystery
+                </a>
+                <a class="category-card link font-bold flex-grow-1 br-m" href="">
+                    Biography
+                </a>
             </div>
         </section>
-
-        <section class="categories my-m">
-            <div class="category-card px-l br-m">
-                <a class="link font-bold" href="">Best Sellers</a>
-            </div>
-            <div class="category-card px-l br-m">
-                <a class="link font-bold" href="">New Arrivals</a>
-            </div>
-            <div class="category-card px-l br-m">
-                <a class="link font-bold" href="">Box Sets</a>
+        <!-- Category Cards -->
+        <section class="my-l">
+            <h6 class="h6 text-center">Special Categories</h6>
+            <div class="categories my-m">
+                <a class="category-card link font-bold br-m" href="">
+                    Box Sets
+                </a>
+                <a class="category-card link font-bold br-m" href="">
+                    Book Bundles
+                </a>
+                <a class="category-card link font-bold br-m" href="">
+                    Blind Dates
+                </a>
             </div>
         </section>
-
-  </main>
-
-  <footer class="wrapper footer-container p-m mx-auto my-l br-m">
+    </main>
+    <!-- Footer -->
+    <footer class="wrapper footer-container p-m mx-auto my-l br-m">
         <section class="footer-section">
             <h6 class="h6">Quick Links</h6>
             <a class="link link-white" href=""><small class="py-xs">About Us</p></small></a>
@@ -108,17 +147,19 @@
             <a class="link link-white" href=""><small class="py-xs">Return Policy</p></small></a>
             <a class="link link-white" href=""><small class="py-xs">Shipping Details</p></small></a>
         </section>
+
         <section class="footer-section">
             <h6 class="h6">Stay in touch</h6>
             <a class="link link-white py-xs" href="https://twitter.com"><small>Twitter &nbsp<i class="fab fa-twitter"></i></small></a>
             <a class="link link-white py-xs" href="https://instagram.com"><small>Instagram &nbsp<i class="fab fa-instagram"></i></small></a>
             <a class="link link-white py-xs" href="https://facebook.com"><small>Facebook &nbsp<i class="fab fa-facebook"></i></small></a>            
         </section>
+
         <section class="footer-section">
             <h6 class="h6">Contact Us</h6>
             <small class="py-xs">E-mail: mail@mail.com</small>
             <small class="py-xs">Whatsapp: +91 8888888888</small>
         </section>
-  </footer>
+    </footer>
 </body>
 </html>
