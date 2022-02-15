@@ -1,18 +1,20 @@
-ul{
-    margin: 0;
-}
-.nav-header{
-    border-radius: 0;
-}
 
 .brand-logo{
-    width: 7rem;
+    max-width: 7rem;
+    height: auto;
     border: none;
+}
+
+.nav-header{
+    flex-wrap: wrap;
 }
 
 .nav-links{
     display: flex;
+    flex-wrap: wrap ;
     align-items: center;
+    justify-content: center;
+    row-gap: 2rem;
 }
 
 .nav-links .nav-icons:hover{
@@ -35,6 +37,15 @@ ul{
     justify-content: center;
 }
 
+.topbar-container a{
+    border: 1px solid transparent;
+}
+
+.main-img-container{
+    position: relative;
+    overflow: hidden;
+}
+
 .main-img{
     width: 100%;
     max-height: 400px;
@@ -42,8 +53,53 @@ ul{
 
 .main-img-text{
     position: absolute;
-    color: var(--text-white);
     top: 20%;
     left: 5%;
     color: var(--primary-dark);
+}
+
+.main-img-text-bottom{
+    position: absolute;
+    color: var(--primary-dark);
+    bottom: 10px;
+    left: 5%;
+}
+
+.featured-wrapper{
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+.featured-container{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px; 
+}
+
+.card-img-s{
+    max-height: 10rem;
+}
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.category-card{
+    display: flex;
+    min-height: 8rem;
+    min-width: 8rem;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid transparent;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.category-card:hover{
+    border: 2px solid var(--primary-light);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    cursor: pointer;
 }
