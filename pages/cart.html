@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <title>Cart | Turning Pages</title>
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <header class="nav-header nav-bg-transparent px-xl py-xs">
+        <img class="brand-logo" src="/assets/Turning Pages-1.png" alt="turning pages logo">
+        <input class="input p-xs br-s my-l mx-auto" placeholder="Search">                     
+        <nav class="nav-links my-l">             
+            <ul class="nav-links">
+                <li class="px-s"><a href="/pages/login.html"><button class="btn btn-outline outline-primary">Login</button></a></li>
+                <li class="px-s">
+                    <a href="/pages/signup.html">
+                        <button class="btn btn-primary">
+                            Sign Up
+                        </button>
+                    </a>
+                </li>
+                <li class="px-s">
+                    <a class="" href="/pages/cart.html">
+                        <div class="badge-container"> 
+                            <div class="badge">
+                            <i class="fas fa-shopping-cart nav-icons text-s"></i>
+                            <span class="badge-icon">3</span>    
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="px-s">
+                    <a href="/pages/wishlist.html">
+                        <div class="badge-container"> 
+                            <div class="badge">
+                                <i class="fas fa-heart nav-icons text-s"></i>
+                                <span class="badge-icon">0</span>    
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Second Navigation Bar -->
+    <nav class="topbar-container">
+        <a class="link link-dark" href="/index.html">Home</a>
+        <a class="link link-dark" href="/pages/products.html">All Products</a>
+        <a class="link link-dark">Categories</a>
+        <a class="link link-dark">Track Order</a>
+    </nav>
+
+    <div class="wrapper flex mx-auto my-m">
+        <!-- Cart Contents -->
+        <main class="flex flex-col gap-2 mx-auto">
+            <h6 class="h6 my-m">My Cart(3)</h6>
+
+            <div class="card-horizontal card-shadow p-xs mx-auto">
+                <div class="grid-row-span-2 card-img">
+                    <img src="https://rukminim1.flixcart.com/image/416/416/kqb8pzk0/book/g/o/t/billy-summers-original-imag4c74n9trefpe.jpeg?q=70" alt="Billy Summers"/>
+                </div>
+                <div class="mx-m">
+                    <div class="card-details">
+                        <div class="text-xs font-light ">Billy Summers</div>
+                        <div class="sub-title ">English, Hardcover, Stephen King</div>
+                        <div class="font-bold">Rs. 399</div>
+                    </div>
+                    <div class="my-xs">
+                        <button class="minus"> 
+                            <i class="fas fa-minus text-xxs"></i>  
+                        </button>
+                        <input type="number" value="1" class="qty">
+                        <button class="plus"> 
+                            <i class="fas fa-plus text-xxs"></i>
+                        </button>
+                    </div>
+                    <div class="flex gap-2">
+                        <small class="link">ADD TO WISHLIST</small>
+                        <small class="link text-gray">REMOVE</small>
+                    </div>
+                </div> 
+            </div> 
+
+            <div class="card-horizontal card-shadow p-xs mx-auto">
+                <div class="grid-row-span-2 card-img">
+                    <img src="https://rukminim1.flixcart.com/image/612/612/kl175ow0/book/n/9/a/maharani-original-imagy935yqhf9u3h.jpeg?q=70" alt="Maharani"/>
+                </div>
+                <div class="mx-m">
+                    <div class="card-details">
+                        <div class="text-xs font-light ">Maharani</div>
+                        <div class="sub-title ">English, Hardcover, Ruskin Bond</div>
+                        <div class="font-bold">Rs. 199</div>
+                    </div>
+                    <div class="my-xs">
+                        <button class="minus"> 
+                            <i class="fas fa-minus text-xxs"></i>  
+                        </button>
+                        <input type="number" value="1" class="qty">
+                        <button class="plus"> 
+                            <i class="fas fa-plus text-xxs"></i>
+                        </button>
+                    </div>
+                    <div class="flex gap-1">
+                        <small class="link">ADD TO WISHLIST</small>
+                        <small class="link text-gray">REMOVE</small>
+                    </div>
+                </div> 
+            </div> 
+            <div class="card-horizontal card-shadow p-xs mx-auto">
+                <div class="grid-row-span-2 card-img">
+                    <img src="https://rukminim1.flixcart.com/image/612/612/ksw4ccw0/book/k/a/9/dubliners-original-imag6cvfgvpdwdn6.jpeg?q=70" alt="dubliners"/>
+                </div>
+                <div class="mx-m">
+                    <div class="card-details">
+                        <div class="text-xs font-light">Dubliners</div>
+                        <div class="sub-title">English, Paperback, James Joyce</div>
+                        <div class="font-bold">Rs. 120</div>
+                    </div>
+                    <div class="my-xs">
+                        <button class="minus"> 
+                            <i class="fas fa-minus text-xxs"></i>  
+                        </button>
+                        <input type="number" value="1" class="qty">
+                        <button class="plus"> 
+                            <i class="fas fa-plus text-xxs"></i>
+                        </button>
+                    </div>
+                    <div class="flex gap-1 ">
+                        <small class="link">ADD TO WISHLIST</small>
+                        <small class="link text-gray">REMOVE</small>
+                    </div>
+                </div> 
+            </div> 
+        </main>
+        <!-- Price Details -->
+        <aside class="price-details-container flex flex-col px-m br-m">
+            <h6 class="h6 my-m">Price Details</h6>
+            
+            <section class="flex flex-col gap-1">
+                <div class="flex justify-content-space-bet">
+                    <p>Price (3 items)</p>
+                    <p>Rs. 718</p>
+                </div>
+                <div class="flex justify-content-space-bet">
+                    <p>Discount</p>
+                    <p class="text-success">Rs. 100</p>
+                </div>
+                <div class="flex justify-content-space-bet">
+                    <p>Delivery</p>
+                    <p class="text-success">FREE</p>
+                </div>
+                <hr class="hr-100">
+                <div class="flex justify-content-space-bet">
+                    <p class="text-xs font-bold">Total</p>
+                    <p class="text-xs font-bold">Rs. 618</p>
+                </div>
+            </section>
+            
+            <input class="coupon-input p-xs my-xs" placeholder="APPLY COUPON">
+
+            <button class="btn btn-primary flex-grow-1 my-m py-l">PLACE ORDER</button>
+        </aside>
+    </div>
+    <!-- Footer -->
+    <footer class="wrapper footer-container p-m mx-auto my-l br-m">
+        <section class="footer-section">
+            <h6 class="h6">Quick Links</h6>
+            <a class="link link-white" href=""><small class="py-xs">About Us</p></small></a>
+            <a class="link link-white" href=""><small class="py-xs">Terms of Service</p></small></a>
+            <a class="link link-white" href=""><small class="py-xs">Privacy Policy</p></small></a>
+            <a class="link link-white" href=""><small class="py-xs">Return Policy</p></small></a>
+            <a class="link link-white" href=""><small class="py-xs">Shipping Details</p></small></a>
+        </section>
+
+        <section class="footer-section">
+            <h6 class="h6">Stay in touch</h6>
+            <a class="link link-white py-xs" href="https://twitter.com"><small>Twitter &nbsp<i class="fab fa-twitter"></i></small></a>
+            <a class="link link-white py-xs" href="https://instagram.com"><small>Instagram &nbsp<i class="fab fa-instagram"></i></small></a>
+            <a class="link link-white py-xs" href="https://facebook.com"><small>Facebook &nbsp<i class="fab fa-facebook"></i></small></a>            
+        </section>
+
+        <section class="footer-section">
+            <h6 class="h6">Contact Us</h6>
+            <small class="py-xs">E-mail: mail@mail.com</small>
+            <small class="py-xs">Whatsapp: +91 8888888888</small>
+        </section>
+    </footer>
+</body>
+</html>
