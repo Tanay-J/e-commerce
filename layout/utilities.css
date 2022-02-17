@@ -18,8 +18,31 @@ ul{
 }
 
 /* flex */
+.flex{
+    display: flex;
+}
+
+.flex-col{
+    flex-direction: column;
+}
+
+.justify-content-space-bet{
+    justify-content: space-between;
+}
+
 .flex-grow-1{
     flex-grow: 1;
+}
+
+.flex-wrap{
+    flex-wrap: wrap ;
+}
+
+.gap-1{
+    gap: 1rem;
+}
+.gap-2{
+    gap: 2rem;
 }
 
 /* text-styling */
@@ -34,3 +57,20 @@ ul{
 .text-dark{
     color: var(--primary-dark);
 }
+
+.text-right{
+    text-align: right;
+}
+
+/* Buttons */
+.btn:disabled{
+    background-color: var(--gray-light);
+    color: var(--gray-dark);
+    border: 1px solid transparent;
+}
+.btn:disabled:hover{
+    box-shadow: none;
+    background-color: var(--gray-light);
+    cursor: default;
+}
+

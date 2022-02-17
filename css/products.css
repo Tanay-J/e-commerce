@@ -1,0 +1,20 @@
+.main-container{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.aside-container{
+    max-width: 20rem;
+}
+
+.card-shadow{
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+.select{
+    border: none;
+    border-bottom: 1px solid;
+    background-color: transparent;
+    cursor: pointer;
+}
+
