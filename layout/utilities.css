@@ -30,6 +30,10 @@ ul{
     justify-content: space-between;
 }
 
+.justify-content-start{
+    justify-content: flex-start;
+}
+
 .flex-grow-1{
     flex-grow: 1;
 }
@@ -58,6 +62,18 @@ ul{
     color: var(--primary-dark);
 }
 
+.text-gray{
+    color: var(--gray-dark);
+}
+
+.text-danger{
+    color: var(--danger);
+}
+
+.text-success{
+    color: var(--success);
+}
+
 .text-right{
     text-align: right;
 }
@@ -72,5 +88,21 @@ ul{
     box-shadow: none;
     background-color: var(--gray-light);
     cursor: default;
+}
+
+/* Other */
+.hr-100{
+    width: 100%;
+}
+
+.hr-75{
+    width: 75%;
+}
+.hr-50{
+    width: 50%;
+}
+
+.hr-25{
+    width: 25%;
 }
 
