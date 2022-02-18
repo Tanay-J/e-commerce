@@ -49,6 +49,23 @@ ul{
     gap: 2rem;
 }
 
+/* Grid */
+.grid{
+    display: grid;
+}
+
+.grid-col-2{
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-col-3{
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-col-4{
+    grid-template-columns: repeat(4, 1fr);
+}
+
 /* text-styling */
 .bg-primary{
     background-color: var(--primary-light);
