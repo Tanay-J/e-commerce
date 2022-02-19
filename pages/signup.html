@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.4/css/all.css"/>
+    <title>Sign Up | Turning Pages</title>
+</head>
+<body>
+    <!-- Main Navigation Bar -->
+    <header class="nav-header nav-bg-transparent px-xl py-xs">
+        <img class="brand-logo" src="/assets/Turning Pages-1.png" alt="turning pages logo">
+        <input class="input p-xs br-s my-l mx-auto" placeholder="Search">                     
+        <nav class="nav-links my-l">             
+            <ul class="nav-links">
+                <li class="px-s">
+                    <a class="" href="/pages/cart.html">
+                        <div class="badge-container"> 
+                            <div class="badge">
+                            <i class="fas fa-shopping-cart nav-icons text-s"></i>
+                            <span class="badge-icon">3</span>    
+                        </div>
+                    </div>
+                    </a>
+                </li>
+                <li class="px-s">
+                    <a href="/pages/wishlist.html">
+                        <div class="badge-container"> 
+                            <div class="badge">
+                                <i class="fas fa-heart nav-icons text-s"></i>
+                                <span class="badge-icon">0</span>    
+                            </div>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!--Second Navigation Bar -->
+    <nav class="topbar-container">
+        <a class="link link-dark" href="/index.html">Home</a>
+        <a class="link link-dark" href="/pages/products.html">All Products</a>
+        <a class="link link-dark">Categories</a>
+        <a class="link link-dark">Track Order</a>
+    </nav>
+
+    <div class="wrapper mx-auto my-m">
+        <main class="auth-container card-shadow p-m mx-auto br-m">
+            <h6 class="h6 mx-auto my-s">Sign Up</h6>
+            <hr class="hr-50">
+            <form class="mx-auto p-s">
+                <div class="flex gap-1 flex-wrap">
+                    <div class="flex flex-col">
+                        <label class="my-xs" for="firstname"><small>First Name</small><span class="text-danger"> *</span></label>
+                        <input id="firstname" class="auth-input p-xs br-s" required placeholder="First Name">
+                    </div>
+                    <div class="flex flex-col">
+                        <label class="my-xs" for="lastname"><small>Last Name</small><span class="text-danger"> *</span></label>
+                        <input id="lastname" class="auth-input p-xs br-s" required placeholder="Last Name">
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <label class="my-xs" for="username"><small>Username</small><span class="text-danger"> *</span></label>
+                    <input id="username" class="auth-input p-xs br-s" required placeholder="Username">
+                </div>
+                <div class="flex flex-col">
+                    <label class="required my-xs" for="password"><small>Password </small><span class="text-danger"> *</span></label>
+                    <input id="password" class="auth-input p-xs br-s" type="password" required placeholder="**********">
+                </div>
+                <div class="flex justify-content-space-bet gap-2 my-xs">
+                    <div>
+                        <input type="checkbox">
+                        <small>I accept all <a class="link link-dark font-bold" href=""> Terms and Conditions</a></small>
+                    </div>
+                </div>
+                <div class="flex flex-col">
+                    <button class="btn btn-primary my-m">Sign Up</button>
+                </div>
+            </form>
+        </main>
+    </div>
+    <!-- Footer -->
+    <footer class="wrapper footer-container p-m mx-auto my-l br-m">
+        <section class="footer-section">
+            <h6 class="h6">Quick Links</h6>
+            <a class="link link-white" href=""><small class="py-xs">About Us</p></small></a>
+            <a class="link link-white" href=""><small class="py-xs">Terms of Service</p></small></a>
+            <a class="link link-white" href=""><small class="py-xs">Privacy Policy</p></small></a>
+            <a class="link link-white" href=""><small class="py-xs">Return Policy</p></small></a>
+            <a class="link link-white" href=""><small class="py-xs">Shipping Details</p></small></a>
+        </section>
+
+        <section class="footer-section">
+            <h6 class="h6">Stay in touch</h6>
+            <a class="link link-white py-xs" href="https://twitter.com"><small>Twitter &nbsp<i class="fab fa-twitter"></i></small></a>
+            <a class="link link-white py-xs" href="https://instagram.com"><small>Instagram &nbsp<i class="fab fa-instagram"></i></small></a>
+            <a class="link link-white py-xs" href="https://facebook.com"><small>Facebook &nbsp<i class="fab fa-facebook"></i></small></a>            
+        </section>
+
+        <section class="footer-section">
+            <h6 class="h6">Contact Us</h6>
+            <small class="py-xs">E-mail: mail@mail.com</small>
+            <small class="py-xs">Whatsapp: +91 8888888888</small>
+        </section>
+    </footer>
+</body>
+</html>
